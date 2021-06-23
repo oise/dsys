@@ -1,6 +1,6 @@
 # Questions from the challenge
 
-**how would you split them into components? Identify as many components as you can.**
+###### **how would you split them into components? Identify as many components as you can.**
 
 - Label
 - TextInput
@@ -10,7 +10,7 @@
 
 Some of these components have  also been created. See the Components list in the documentation
 
-**How would you approach a request from a team asking for a dialog without the close button in the header?**
+###### **How would you approach a request from a team asking for a dialog without the close button in the header?**
 
 The Modal has a `showClose` boolean prop. This can be used to hide/show the close button.
 
@@ -20,7 +20,7 @@ The Modal has a `showClose` boolean prop. This can be used to hide/show the clos
 </Modal>
 ```
 
-**How would you make the header and footer of the dialog window optional?**
+###### **How would you make the header and footer of the dialog window optional?**
 
 Since the `Modal` renders only what is passed as `children`, skipping `Modal.Header` and `Modal.Footer` doesn't render
 them
@@ -31,7 +31,7 @@ them
 </Modal>
 ```
 
-**Write down a strategy of how would you introduce a breaking change to a component after it’s released.**
+###### **Write down a strategy of how would you introduce a breaking change to a component after it’s released.**
 
 - Set a clear timeline for when support of the old features would end.
 - Update documentation with notices on the breaking changes.

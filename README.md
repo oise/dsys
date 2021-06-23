@@ -13,4 +13,9 @@ To run this project
 - `yarn test` for all available test suites.
 
 
-All Question have been answers
+## Demo
+https://compassionate-elion-b79f3e.netlify.app
+
+All questions from the challenge are answered on https://compassionate-elion-b79f3e.netlify.app/faqs
+
+RFC can be found at https://compassionate-elion-b79f3e.netlify.app/rfc
