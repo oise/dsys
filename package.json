@@ -18,7 +18,11 @@
   "scripts": {
     "dev": "docz dev",
     "build": "docz build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "start:web": "node ./server.js"
+  },
+  "engines": {
+    "node": "12"
   },
   "browserslist": {
     "production": [
