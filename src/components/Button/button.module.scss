@@ -1,0 +1,30 @@
+@use '../../common/foundations';
+
+
+.button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  height: 35px;
+  cursor: pointer;
+  padding: 8px 16px;
+  min-width: 80px;
+
+  &.primary {
+    background-color: foundations.$primary;
+    color: #fff;
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: foundations.$primary;
+    border-color: foundations.$grey-100;
+  }
+  &.danger {
+    background-color: foundations.$danger;
+    color: #fff;
+  }
+}

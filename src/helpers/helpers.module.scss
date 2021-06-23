@@ -1,0 +1,22 @@
+.image-helper {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-helper {
+  margin-bottom: 16px;
+}
+
+.button-group-helper {
+  display: flex;
+  justify-content: flex-end;
+  > button {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+}

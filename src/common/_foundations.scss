@@ -1,0 +1,21 @@
+$primary: #488AEB;
+$danger: #E8533D;
+
+//grey-900 to grey-100
+
+$grey-900: #5e5d5d;
+$grey-200: #868686;
+$grey-100: #d7d7d7;
+
+
+//Body - Font Sizes
+$small: 14px;
+$normal: 16px;
+$large: 18px;
+
+
+@mixin box-shadow {
+  box-shadow: 0 0 25px 0 $grey-200;
+}
+
+

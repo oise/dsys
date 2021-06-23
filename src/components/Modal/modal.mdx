@@ -1,0 +1,75 @@
+---
+name: Modal
+menu: Components
+route: /components/modal
+---
+
+import { Modal } from './Modal';
+import { Playground, Props } from 'docz';
+import { useState } from 'react'
+import { Button } from '../Button/Button';
+import { FormHelper, ImageHelper, ButtonGroupHelper } from '../../helpers';
+import { TextInput } from '../TextInput';
+import { Label } from '../Label';
+
+
+# Modal
+
+## Example 1
+<Playground>
+    {() => {
+        const [open, setOpen] = useState(false);
+        return (
+            <>
+                <Button kind={'primary'} onClick={() => setOpen(true)}>Open Modal</Button>
+                <Modal isOpen={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)} closeOnEsc={true}>
+                    <Modal.Header>Edit Stream</Modal.Header>
+                    <Modal.Content>
+                        <ImageHelper/>
+                        <FormHelper>
+                            <Label> DataStream Title</Label>
+                            <TextInput name={'title'}/>
+                        </FormHelper>
+                        <FormHelper>
+                            <Label> Description</Label>
+                            <TextInput name={'title'}/>
+                        </FormHelper>
+                    </Modal.Content>
+                    <Modal.Footer>
+                        <ButtonGroupHelper>
+                            <Button kind={'secondary'} onClick={()=>setOpen(false)}>Cancel</Button>
+                            <Button>Apply</Button>
+                        </ButtonGroupHelper>
+                    </Modal.Footer>
+                </Modal>
+            </>
+        )
+    }}
+</Playground>
+
+
+## Example 2
+<Playground>
+    {() => {
+        const [open, setOpen] = useState(false);
+        return (
+            <>
+                <Button kind={'primary'} onClick={() => setOpen(true)}>Open Modal</Button>
+                <Modal isOpen={open} onOpen={() => setOpen(true)} onClose={() => setOpen(false)} closeOnEsc={true}>
+                    <Modal.Header>Delete User</Modal.Header>
+                    <Modal.Content>
+                        This will permanently delete a user
+                    </Modal.Content>
+                    <Modal.Footer>
+                        <ButtonGroupHelper>
+                            <Button kind={'secondary'} onClick={()=>setOpen(false)}>Cancel</Button>
+                            <Button kind={'danger'}>Apply</Button>
+                        </ButtonGroupHelper>
+                    </Modal.Footer>
+                </Modal>
+            </>
+        )
+    }}
+</Playground>
+
+<Props of={Modal}/>

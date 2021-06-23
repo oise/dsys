@@ -1,0 +1,36 @@
+@use '../../common/foundations';
+
+.input {
+  width: 100%;
+  padding: 8px 4px;
+  height: 44px;
+  box-sizing: border-box;
+  transition: all 250ms linear;
+  border: 1px solid foundations.$grey-100;
+  outline: none;
+
+  &:focus, &:active {
+    border-color: foundations.$primary;
+  }
+
+  &::-ms-reveal, &::-ms-clear {
+    display: none;
+  }
+
+  &::placeholder {
+    color: foundations.$grey-100
+  }
+
+  &::-webkit-input-placeholder {
+    color: foundations.$grey-100
+  }
+
+  &::-moz-placeholder {
+    color: foundations.$grey-100
+  }
+
+  &:-ms-input-placeholder {
+    color: foundations.$grey-100
+  }
+
+}

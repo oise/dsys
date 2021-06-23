@@ -1,0 +1,6 @@
+@use '../../common/foundations';
+
+.label {
+  font-size: foundations.$small;
+  color: foundations.$grey-200;
+}
